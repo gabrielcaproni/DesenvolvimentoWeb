@@ -20,6 +20,30 @@
     <button id="b1" type="button" draggable="true">Elemento1</button>
     <button id="b2" type="button" draggable="true">Elemento2</button>
 
-   <div dropzone="move"></div>
+   <div id="divDrop" dropzone="move"></div>
+
+   <script>
+    b1.addEventListener('dragstart', e => {
+        e.dataTransfer.setData('Text', e.target.id);
+    });
+
+    divDrop.addEventListener('dragover', e => {
+        e.preventDefault();
+    });
+
+    divDrop.addEventListener('drop', e => {
+        idElement = e.dataTransfer.getData('Text');
+        element = document.getElementById(idElement);
+        const action = e.taget.getAttribute('dropzone');
+
+        if((action == 'move')){
+            e.target.appendChild(button);
+        }else if('copy'){
+            const buttonCopy = button.cloneNode(true);
+            buttonCopy.setAttribute('id', 'cp' + idElement);
+            e.target.appendChild(button);
+        }
+    });
+   </script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    /* text-align: center; */
+    color: #111111; /* Preto */
+}
+
+.car {
+    background-color: #b2b2b2; /* Cinza */
+    padding: 0.5px;
+    margin: 10px;
+    border-radius: 4px;
+    text-align: center;
+    width: 25%;
+}
+
+h2 {
+    color: #111; /* Preto */
+}
+
+.price {
+    color: #febe01; /* Amarelo 1 */
+    font-size: 24px; /* Aumenta o tamanho da fonte do preço */
+}
+
+.buy-button {
+    background-color: #febe01; /* Amarelo 1 */
+    color: #332200; /* Amarelo 2 */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    font-size: 18px; /* Aumenta o tamanho da fonte do botão */
+    cursor: pointer;
+}

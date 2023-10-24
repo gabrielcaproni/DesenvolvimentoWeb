@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #790a0a;
+}
+
+h1 {
+    /* text-align: center; */
+    color: #111111; /* Preto */
+}
+
+h2 {
+    color: #b2b2b2; /* Preto */
+}
+
+p{
+    color: #b2b2b2
+}
+
+#logo{
+    padding: 0.5%;
+    width: 10%;
+    height: 10%;
+    margin: 5px 0;
+    border-radius: 50%;
+    border: #111 solid 1px;
+}
+
+.carro img{
+    width: 10%;
+    padding: 2%;
+    margin: 5%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    padding: 5px;
+    gap: 10px;
+}
+
+.carro {
+    background-color: #111; /* Cinza */
+    padding: 1%;
+    margin: 10px;
+    border-radius: 4px;
+    text-align: center;
+    width: 95%;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerCarro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    padding: 5px;
+    gap: 10px;
+}
+
+.containerCarro div {
+    display: block;
+}
+
+.containerCarro div img{
+    width: 300px;
+    border: 3px solid #ffffff;
+}
+
+.carro span{
+    color: #febe01;
+    font-size: medium;
+}
+
+.preco {
+    font-size: 15px; /* Aumenta o tamanho da fonte do preço */
+}
+
+.botao {
+    background-color: #febe01; /* Amarelo 1 */
+    color: #332200; /* Amarelo 2 */
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    font-size: 15px; /* Aumenta o tamanho da fonte do botão */
+    cursor: pointer;
+}
